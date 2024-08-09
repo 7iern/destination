@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destination XXX</title>
+    <style>
+    /* 
+    ____            _   _             _   _              __  ____  ____  __
+    |  _ \  ___  ___| |_(_)_ __   __ _| |_(_) ___  _ __   \ \/ /\ \/ /\ \/ /
+    | | | |/ _ \/ __| __| | '_ \ / _` | __| |/ _ \| '_ \   \  /  \  /  \  / 
+    | |_| |  __/\__ \ |_| | | | | (_| | |_| | (_) | | | |  /  \  /  \  /  \ 
+    |____/ \___||___/\__|_|_| |_|\__,_|\__|_|\___/|_| |_| /_/\_\/_/\_\/_/\_\
+    */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            display: none;
+            pointer-events: none;
+            background-size: cover;
+        }
+        .wild {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            display: none;
+            pointer-events: none;
+            background: url('wild.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .exotic {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            display: none;
+            pointer-events: none;
+            background: url('exotic.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .passion {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            display: none;
+            pointer-events: none;
+            background: url('passion.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .fit {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            display: none;
+            pointer-events: none;
+            background: url('fit.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .enter {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            pointer-events: none;
+            background: url('enter.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .hover-area {
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .hover-area.left-1 {
+            left: 0;
+        }
+
+        .hover-area.left-2 {
+            left: 20%;
+        }
+
+        .hover-area.center {
+            left: 40%;
+        }
+
+        .hover-area.right-2 {
+            left: 60%;
+        }
+
+        .hover-area.right-1 {
+            left: 80%;
+        }
+
+        .hover-area:hover + .overlay {
+            display: block;
+        }
+        .hover-area:hover + .wild {
+            display: block;
+        }
+        .hover-area:hover + .exotic {
+            display: block;
+        }
+        .hover-area:hover + .enter {
+            display: block;
+        }
+        .hover-area:hover + .passion {
+            display: block;
+        }
+        .hover-area:hover + .fit {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-area left-1" id="hover-sound" onclick="location.href='wild.html';"></div>
+    <div class="overlay wild" style="z-index: 1;"></div>
+
+    <div class="hover-area left-2 hover-sound" onclick="location.href='exotic.html';"></div>
+    <div class="overlay exotic" style="z-index: 2;"></div>
+
+    <div class="hover-area center hover-sound" onclick="location.href='exotic.html';"></div>
+    <div class="overlay enter" style="z-index: 3;"></div>
+
+    <div class="hover-area right-2 hover-sound" onclick="location.href='passion.html';"></div>
+    <div class="overlay passion" style="z-index: 4;"></div>
+
+    <div class="hover-area right-1 hover-sound" onclick="location.href='fit.html';"></div>
+    <div class="overlay fit" style="z-index: 5;"></div>
+</body>
+</html>
